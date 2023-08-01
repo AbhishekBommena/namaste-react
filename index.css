@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #202124;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.googleIcon{
+    margin-right: 2px;
+}
+.headerContainer{
+    padding: 15px 80px 15px 80px;
+    border-bottom: 1px solid #202124;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.userIcon{
+    /* justify */
+    
+}
+.googleText{
+    font-size: 20px;
+}
+.searchFieldContainer{
+    position: relative;
+}
+.searchIcon{
+    position: absolute;
+    right: 0;
+    margin: 10px;
+}
+.searchField{
+    padding: 10px 30px 10px 20px;
+    font-size: 16px;
+    width: 600px;
+    border-radius: 30px;
+    border: 1px solid #202124;
+    outline: none;
+}
