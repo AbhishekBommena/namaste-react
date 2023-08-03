@@ -1,14 +1,14 @@
 body{
-    margin: 0;
+    /* margin: 0; */
 }
 p{
     margin: 0;
 }
 a{
     text-decoration: none;
-    color: #202124;
+    color: black;
 }
-.logo{
+/* .logo{
     display: flex;
     align-items: center;
     
@@ -23,10 +23,10 @@ a{
     align-items: center;
     justify-content: space-between;
 }
-.userIcon{
+.userIcon{ */
     /* justify */
     
-}
+/* }
 .googleText{
     font-size: 20px;
 }
@@ -45,4 +45,105 @@ a{
     border-radius: 30px;
     border: 1px solid #202124;
     outline: none;
+} */ 
+
+ /* {{ --->   EPISODE - 4 START   <--- }} */
+.headerContainer{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
 }
+.logoContainer{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin-right: 10px;
+}
+.companyName{
+    /* border: 1px solid green; */
+    font-size: 20px;
+    font-weight: 600;
+}
+.navContainer{
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 10px;
+}
+.navItems{
+    /* border: 1px solid blue; */
+    margin-right: 100px;
+}
+.navItems:nth-last-child(1){
+    margin-right: 0;
+}
+.bodyContainer{
+    border: 1px solid black;
+    padding: 30px 10%;
+}
+.searchContainer{
+    /* border: 1px solid yellowgreen; */
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.searchField{
+    border: 1px solid lightgray;
+    width: 400px;
+    font-size: 16px;
+    padding: 10px 15px 10px 20px;
+    border-right: 0;
+}
+.searchField:focus{
+    outline: none;
+    border: 1px solid gray; 
+}
+.searchIconBtn{
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 0 12.5px;
+}
+.restaurantContainer{
+    /* border: 1px solid red; */
+    padding: 10px ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.resCardContainer{
+    /* border: 1px solid blue; */
+    padding: 15px;
+    width: 230px;
+    /* height: 300px; */
+}
+.resCardContainer:hover{
+    border: 2px solid lightgray;
+    cursor: pointer;
+}
+.resCardImg{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 200px;
+    margin-bottom: 8px;
+}
+.resName{
+    /* border: 1px solid gray; */
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+
+}
+.description{
+    /* border: 1px solid green; */
+    font-size: 16px;
+    color: gray;
+    word-wrap: break-word;
+}
+ /* {{ --->   EPISODE - 4 END   <--- }} */
