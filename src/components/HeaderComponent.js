@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { LOGO_URL } from "../utils/constants";
+import ShimmerComp from "./ShimmerComp";
 
 const HeaderComponent = () => {
+  const [login_out,setLogin_out] = useState("Login");
   return (
     <div className="headerContainer">
       <div className="logoContainer">
-        <img src={LOGO_URL} className="logo" />
+        {LOGO_URL ? <img src={LOGO_URL} className="logo" /> : <ShimmerComp/> }
         <p className="companyName">Cwiggy</p>
       </div>
       <div className="navContainer">
@@ -21,6 +24,7 @@ const HeaderComponent = () => {
           Cart
         </a>
       </div>
+      <button className="login-logout" onClick={() => setLogin_out(login_out === "Login" ? "Logout" : "Login")}>{login_out}</button>
     </div>
   );
 };

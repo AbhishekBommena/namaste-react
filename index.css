@@ -1,12 +1,17 @@
-body{
-    /* margin: 0; */
+body {
+  /* margin: 0; */
 }
-p{
-    margin: 0;
+p {
+  margin: 0;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 /* .logo{
     display: flex;
@@ -24,8 +29,8 @@ a{
     justify-content: space-between;
 }
 .userIcon{ */
-    /* justify */
-    
+/* justify */
+
 /* }
 .googleText{
     font-size: 20px;
@@ -45,105 +50,138 @@ a{
     border-radius: 30px;
     border: 1px solid #202124;
     outline: none;
-} */ 
+} */
 
- /* {{ --->   EPISODE - 4 START   <--- }} */
-.headerContainer{
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 100px;
+/* {{ --->   EPISODE - 4 START   <--- }} */
+.headerContainer {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
 }
-.logoContainer{
-    display: flex;
-    align-items: center;
+.logoContainer {
+  display: flex;
+  align-items: center;
 }
-.logo{
-    width: 50px;
-    height: 50px;
-    /* border: 1px solid red; */
-    margin-right: 10px;
+.logo {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid red; */
+  margin-right: 10px;
 }
-.companyName{
-    /* border: 1px solid green; */
-    font-size: 20px;
-    font-weight: 600;
+.companyName {
+  /* border: 1px solid green; */
+  font-size: 20px;
+  font-weight: 600;
 }
-.navContainer{
-    /* border: 1px solid green; */
-    display: flex;
-    padding: 10px;
+.navContainer {
+  /* border: 1px solid green; */
+  display: flex;
+  padding: 10px;
 }
-.navItems{
-    /* border: 1px solid blue; */
-    margin-right: 100px;
+.navItems {
+  /* border: 1px solid blue; */
+  margin-right: 100px;
 }
-.navItems:nth-last-child(1){
-    margin-right: 0;
+.navItems:nth-last-child(1) {
+  margin-right: 0;
 }
-.bodyContainer{
-    border: 1px solid black;
-    padding: 30px 10%;
-}
-.searchContainer{
-    /* border: 1px solid yellowgreen; */
-    padding: 10px 30px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-}
-.searchField{
-    border: 1px solid lightgray;
-    width: 400px;
-    font-size: 16px;
-    padding: 10px 15px 10px 20px;
-    border-right: 0;
-}
-.searchField:focus{
-    outline: none;
-    border: 1px solid gray; 
-}
-.searchIconBtn{
+.login-logout{
+    padding: 10px 0px;
+    width: 100px;
     background-color: goldenrod;
     color: white;
-    border: none;
-    padding: 0 12.5px;
 }
-.restaurantContainer{
-    /* border: 1px solid red; */
-    padding: 10px ;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.bodyContainer {
+  border: 1px solid black;
+  padding: 30px 10%;
 }
-.resCardContainer{
-    /* border: 1px solid blue; */
-    padding: 15px;
-    width: 230px;
-    /* height: 300px; */
+.topBar {
+  /* border: 1px solid yellowgreen; */
+  padding: 10px 30px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.resCardContainer:hover{
-    border: 2px solid lightgray;
-    cursor: pointer;
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid violet; */
 }
-.resCardImg{
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 200px;
-    margin-bottom: 8px;
+.searchField {
+  border: 1px solid lightgray;
+  width: 400px;
+  font-size: 16px;
+  padding: 10px 15px 10px 20px;
+  border-right: 0;
 }
-.resName{
-    /* border: 1px solid gray; */
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 2px;
+.searchField:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+.searchIconBtn {
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  padding: 12.5px 12.5px;
+  cursor: pointer;
+}
 
+.topRatedResBtn {
+  background-color: #14555c;
+  color: white;
+margin-right: 20px;
+  padding: 10px 20px;
 }
-.description{
-    /* border: 1px solid green; */
-    font-size: 16px;
-    color: gray;
-    word-wrap: break-word;
+.resetBtn {
+  background-color: goldenrod;
+  padding: 10px;
 }
- /* {{ --->   EPISODE - 4 END   <--- }} */
+.fa-arrows-rotate {
+  color: white;
+}
+.restaurantContainer {
+  /* border: 1px solid red; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.resCardContainer {
+  /* border: 1px solid blue; */
+  padding: 15px;
+  width: 230px;
+  /* height: 300px; */
+}
+.resCardContainer:hover {
+  border: 2px solid lightgray;
+  cursor: pointer;
+}
+.resCardImg {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 200px;
+  margin-bottom: 8px;
+}
+.resName {
+  /* border: 1px solid gray; */
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.description {
+  /* border: 1px solid green; */
+  font-size: 16px;
+  color: gray;
+  word-wrap: break-word;
+}
+/* {{ --->   EPISODE - 4 END   <--- }} */
+
+.logoShimmer {
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  margin-right: 10px;
+}
