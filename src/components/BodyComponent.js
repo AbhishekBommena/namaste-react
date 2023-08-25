@@ -1,9 +1,10 @@
-import { resObj } from "../utils/mockData";
+import { allRestaurantsObjs } from "../utils/mockData";
 import SearchBarComponent from "./SearchBarComponent";
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const BodyComponent = () => {
-  const [listOfRestaurants, setListOfRestaurants] = useState(resObj);
+  const [listOfRestaurants, setListOfRestaurants] = useState(allRestaurantsObjs);
   const [searchFieldText, setSearchFieldText] = useState("");
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const handleFiltering = () => {
@@ -66,10 +67,10 @@ const BodyComponent = () => {
 
       <div className="restaurantContainer">
         {filteredRestaurants.map((eachRestaurant) => (
-          <RestaurantCard
+          <Link to={"/restaurant/"+eachRestaurant.info.id}><RestaurantCard
             key={eachRestaurant.info.id}
             resData={eachRestaurant}
-          />
+          /></Link>
         ))}
       </div>
     </div>

@@ -1,4 +1,4 @@
-export const resObj = [
+export const allRestaurantsObjs = [
     {
       info: {
         id: "436045",

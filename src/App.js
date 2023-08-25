@@ -2,7 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import HeaderComponent from "./components/HeaderComponent";
 import BodyComponent from "./components/BodyComponent";
-
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import About from "./components/About";
+import Error from "./components/Error";
+import Restaurant from "./components/Restaurant";
 // const heading = React.createElement("h1", {id:"heading",className:"headingContent"}, "This is React!");
 // console.log(heading);
 // const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -70,7 +73,6 @@ import BodyComponent from "./components/BodyComponent";
 //   );
 // };
 
-// {{ --->   EPISODE - 4 START   <--- }}
 // const HeaderComponent = () => {
 //   return (
 //     <div className="headerContainer">
@@ -954,11 +956,34 @@ const AppLayout = () => {
   return (
     <div className="app">
       <HeaderComponent />
-      <BodyComponent />
+      <Outlet />
     </div>
   );
 };
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
 
-// {{ --->   EPISODE - 4 END   <--- }}
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children : [
+      {
+        path: "/",
+        element: <BodyComponent />
+      },
+      {
+        path: "/about",
+        element: <About />
+      },
+      {
+        path: "/restaurant/:resId",
+        element: <Restaurant />
+      }
+    ],
+    errorElement: <Error />
+  }
+  
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={appRouter} />);
+
